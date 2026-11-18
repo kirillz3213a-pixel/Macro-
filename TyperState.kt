@@ -1,0 +1,14 @@
+package com.autotyper
+
+/** Общие настройки между экраном и службой. */
+object TyperState {
+    @Volatile var text: String = ""
+    @Volatile var delayMs: Long = 40
+    @Volatile var step: Int = 1
+    @Volatile var jitter: Boolean = true
+    @Volatile var armed: Boolean = false
+    @Volatile var autoSend: Boolean = false
+    @Volatile var splitMode: Boolean = false
+    @Volatile var splitNewline: Boolean = false
+    @Volatile var pauseMs: Long = 800
+}
